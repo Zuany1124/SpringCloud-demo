@@ -20,8 +20,8 @@ spring:
 spring:
   config:
     import:
-      - nacos:common.yaml?group=order
-      - nacos:database.yaml?group=order
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
     activate:
       on-profile: dev
 
@@ -29,9 +29,9 @@ spring:
 spring:
   config:
     import:
-      - nacos:common.yaml?group=order
-      - nacos:database.yaml?group=order
-      - nacos:haha.yaml?group=order
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:haha.properties?group=order
     activate:
       on-profile: test
 
@@ -39,8 +39,8 @@ spring:
 spring:
   config:
     import:
-      - nacos:common.yaml?group=order
-      - nacos:database.yaml?group=order
-      - nacos:hehe.yaml?group=order
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:hehe.properties?group=order
     activate:
       on-profile: prod

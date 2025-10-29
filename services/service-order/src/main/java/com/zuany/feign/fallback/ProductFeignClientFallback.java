@@ -2,6 +2,7 @@ package com.zuany.feign.fallback;
 
 import com.zuany.feign.ProductFeignClient;
 import com.zuany.product.bean.Product;
+import lombok.SneakyThrows;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

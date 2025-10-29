@@ -1,7 +1,7 @@
 logging:
   level:
     # 指定 feign 接口所在的包的日志级别为 debug 级别
-    indi.mofan.order.feign: debug
+    com.zuany.feign: debug
 
 spring:
   cloud:
@@ -22,4 +22,15 @@ spring:
             read-timeout: 5000
 #            该请求拦截器仅对当前客户端有效
 #            request-interceptors:
-#              - indi.mofan.order.interceptor.XTokenRequestInterceptor
+#               com.zuany.interceptor.XTokenRequestInterceptor
+    sentinel:
+      transport:
+        dashboard: localhost:8000
+      eager: true
+      # 支持流控模式的链路模式
+      web-context-unify: false
+
+# 开启熔断
+feign:
+  sentinel:
+    enabled: true
